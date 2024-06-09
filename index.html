@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Contact form</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<form action="#" method="post">
+  <fieldset>
+    <legend>Get Started Today!</legend>
+    <label for="first-name">
+      <p>Name <span class="star">*</span></p>
+      <input type="text" name="first-name" id="first-name" placeholder="John Smith">
+      <p class="requiredTextFirst">This Field is Required</p>
+    </label>
+    <label for="last-name">
+      <p>Company <span class="star">*</span></p>
+      <input type="text" name="last-name" id="last-name" placeholder="abc company">
+      <p class="requiredTextLast">This Field is Required</p>
+    </label>
+    <label for="message">
+      TELL US MORE ABOUT YOUR PROFECT
+      <textarea name="message" id="message" placeholder="Tell us more about your project"></textarea>
+      <p class="requiredTextMessage">This Field is Required</p>
+    </label>
+    <label for="file">
+      <input type="file" name="file" id="file" >
+      <span>Drag & drop any images or documents that might be helpful in explaining your brief
+        here (Max file size: 25 MB).</span>
+    </label>
+    <input type="submit" value="Book Appointment">
+  </fieldset>
+</form>
+<div class="success">
+  <div class="header">
+    <img src="assets/images/icon-success-check.svg" alt="">
+    <p>Message Sent!</p>
+  </div>
+  <p>Thanks for completing the form. We'll be in touch soon!</p>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
